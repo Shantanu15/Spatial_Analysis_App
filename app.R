@@ -64,13 +64,13 @@ ui <- dashboardPage( title = "Spatial Analysis - DAY NRLM",
                        br(),
                        br(),
                        
-                       #fluidRow(box(title =  "Source:", background = "light-blue", width = 2)),
-                       
                        fluidRow(infoBox(title = "NRLM-MIS",icon= icon ("laptop"), href = "http://nrlm.gov.in/"),
-                                infoBox(title = "SHG BL Portal", icon =icon ("university"),href = "http://daynrlmbl.aajeevika.gov.in"),  
-                                infoBox(title = "CRISIL Inclusix Report",href = "https://www.crisil.com/content/dam/crisil/our-analysis/reports/Research/documents/2018/march/crisil-inclusix-financial-inclusion-surges-driven-by-Jan-Dhan-yojana.pdf")  
-                                
-                                
+                                infoBox(title = "NRLM Bank Linkage Portal", icon =icon ("university"),href = "http://daynrlmbl.aajeevika.gov.in"),  
+                                infoBox(title = "CRISIL Inclusix Report",href = "https://www.crisil.com/content/dam/crisil/our-analysis/reports/Research/documents/2018/march/crisil-inclusix-financial-inclusion-surges-driven-by-Jan-Dhan-yojana.pdf"),  
+                       br(), 
+                       br(),
+                       br(),
+                       box(title =  "Notes:", background = "light-blue", width = 12, p("Use compare data on hover (third icon from the top right as you hover on the map). Ignore the grey box (to be fixed in the next version). Maps courtesy project.datameet.org "))          
                                 
                        )
                        
