@@ -15,9 +15,9 @@ ui <- dashboardPage( title = "Spatial Analysis - DAY NRLM",
                      
                      dashboardSidebar(
                        selectInput("state_1", "Choose the first State:", 
-                                   list('Bihar','Jharkhand', 'Maharashtra', 'Uttar Pradesh','West Bengal')),
+                                   list('Assam','Bihar','Chhattisgarh','Gujarat','Jharkhand','Karnataka','Madhya Pradesh', 'Maharashtra','Rajasthan','Odisha','Tamil Nadu', 'Uttar Pradesh','West Bengal')),
                        selectInput("state_2", "Choose the second State:", 
-                                   list('Bihar','Jharkhand', 'Maharashtra', 'Uttar Pradesh','West Bengal')
+                                   list('Assam','Bihar','Chhattisgarh','Gujarat','Jharkhand','Karnataka','Madhya Pradesh', 'Maharashtra','Rajasthan','Odisha','Tamil Nadu', 'Uttar Pradesh','West Bengal')
                        )),
                      
                      dashboardBody(
@@ -67,10 +67,12 @@ ui <- dashboardPage( title = "Spatial Analysis - DAY NRLM",
                        fluidRow(infoBox(title = "NRLM-MIS",icon= icon ("laptop"), href = "http://nrlm.gov.in/"),
                                 infoBox(title = "NRLM Bank Linkage Portal", icon =icon ("university"),href = "http://daynrlmbl.aajeevika.gov.in"),  
                                 infoBox(title = "CRISIL Inclusix Report",href = "https://www.crisil.com/content/dam/crisil/our-analysis/reports/Research/documents/2018/march/crisil-inclusix-financial-inclusion-surges-driven-by-Jan-Dhan-yojana.pdf"),  
+                                infoBox(title = "Maps - Data Meet ",href = "project.datameet.org"),
                        br(), 
                        br(),
                        br(),
-                       box(title =  "Notes:", background = "light-blue", width = 12, p("Use compare data on hover (third icon from the top right as you hover on the map). Ignore the grey box (to be fixed in the next version). Maps courtesy project.datameet.org "))          
+                       box(title =  "Features:", background = "red", width = 4,collapsible = TRUE,collapsed = TRUE, p("Compare inter and intra-state variations in Mission and Bank Linkage performance. Crisil Inclusix score also added to facilitate additional analysis")),
+                       box(title =  "Notes:", background = "teal", width = 4,collapsible = TRUE,collapsed = TRUE, p("Maps are based on Census 2011 district list, therefore recently created districts in ASA,CHH,GUJ,MP,WB are missing."),p("Use compare data on hover ,third icon from the top right as you hover on the map. Ignore the grey box (to be fixed in the next version)"))          
                                 
                        )
                        
